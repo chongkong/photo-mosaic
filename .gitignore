@@ -62,3 +62,7 @@ out
 gen
 
 cmake-build-debug
+data
+.vscode
+build
+cmake-build-debug

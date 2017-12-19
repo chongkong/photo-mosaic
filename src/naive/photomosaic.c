@@ -1,8 +1,7 @@
+#include <limits.h>
 #include "photomosaic.h"
 
-#include <limits.h>
-
-void photomosaic(unsigned char *img, int width, int height, unsigned char *dataset, int *idx) {
+void photomosaic(unsigned char *img, int width, int height, unsigned char *dataset, int *indices) {
     int swidth = width / 32, sheight = height / 32;
     for (int sh = 0; sh < sheight; ++sh) {
         for (int sw = 0; sw < swidth; ++sw) {
